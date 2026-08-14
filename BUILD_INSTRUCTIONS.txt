@@ -1,0 +1,13 @@
+S2B HAYAGRIVA - BUILD
+1. Push this entire folder to GitHub, preserving folders.
+2. Ensure .github/workflows/main.yml exists exactly at that path.
+3. GitHub Actions -> Build S2B Hayagriva APK.
+4. The APK artifact is app-debug.apk.
+
+Local build with JDK 17 + Gradle 8.9:
+gradle :app:assembleDebug
+
+Do not flatten the app directory.
+Do not put MainActivity.kt in repository root.
+Do not put AndroidManifest.xml in repository root.
+Do not put main.yml in repository root.
